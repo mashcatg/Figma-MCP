@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    padding: 64px 32px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-container {
+    margin-bottom: 80px;
+}
+
+.content-box {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.content {
+    padding: 48px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+}
+
+.tag span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title-container h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.credit-card {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.credit-card .credit {
+    color: #ffffff;
+}
+
+.credit-card .card {
+    color: #007AFF;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 24px 0 32px;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.app-store-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.app-store-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
+    margin-right: -12px;
+}
+
+.user-count {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-count strong {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.user-count span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-section {
+    text-align: center;
+}
+
+.bottom-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .background {
+        padding: 32px 16px;
+    }
+
+    .content {
+        padding: 32px 24px;
+    }
+
+    .title-container h1,
+    .credit-card {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .logo-container {
+        gap: 32px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+}
